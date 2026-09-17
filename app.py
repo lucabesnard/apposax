@@ -6,6 +6,7 @@ app = Dash(
     use_pages=True,
     external_stylesheets=[dbc.themes.BOOTSTRAP]
 )
+server = app.server # Indispensable pour Render
 
 sidebar = html.Div([
     html.Img(
